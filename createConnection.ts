@@ -6,7 +6,7 @@ dotenv.config();
 
 //createconnection is providedby type orm
 createConnection({
-    url: process.env.DATABASE,
+    url: process.env.DATABASE_URL,
     entities: [hotels],
     type: "postgres",
     extra: {

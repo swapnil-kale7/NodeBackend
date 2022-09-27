@@ -7,7 +7,7 @@ const app=new koa();
 
 //connext to database
 const pool=new Pool({
-    connectionString:process.env.DATABASE,
+    connectionString: process.env.DATABASE_URL,
     ssl:{
         rejectUnauthorized:false
     }
