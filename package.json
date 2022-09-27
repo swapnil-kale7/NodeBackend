@@ -6,13 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "SimpleNode": "ts-node-dev --respawn --transpile-only simpleNode.ts",
-    "start": "ts-node-dev --respawn --transpile-only simpleNode.ts"
+    "SimpleKoa": "ts-node-dev --respawn --transpile-only simpleKoa.ts",
+    "start": "ts-node-dev --respawn --transpile-only simpleNode.ts",
+    "KoaDBsql":"ts-node-dev --respawn --transpile-only KoaDBsql.ts",
+    "KoaTypeOrm": "ts-node-dev --respawn --transpile-only KoaTypeOrm.ts",
+    "KoaGraphql": "ts-node-dev --respawn --transpile-only KoaGraphql.ts"
+    
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@koa/cors": "^3.1.0",
-    "@types/node": "^16.11.0",
     "@types/pg": "^8.6.0",
     "apollo-server": "^2.25.1",
     "apollo-server-koa": "^2.25.1",
@@ -29,5 +33,8 @@
     "type-graphql": "^1.1.1",
     "typeorm": "^0.2.34",
     "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18"
   }
 }
