@@ -17,8 +17,9 @@ async function main(){
     //make graphql work for all types like get put etc.
     router.all("/graphql",graphqlHTTP({schema:resolvers}));
     appoloServer.applyMiddleware({app});
-    app.use(router.routes());
     app.use(cors());
+    app.use(router.routes()).use(router.allowedMethods());
+    
     app.listen(process.env.PORT || 3005, () => console.log("graphql is runnning fine"))
 }
 main();
