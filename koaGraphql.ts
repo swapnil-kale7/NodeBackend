@@ -10,6 +10,7 @@ import * as cors from "@koa/cors";
 
 async function main(){
     const app = new koa();
+    
     //now mention the resolvers in your app
     const resolvers = await buildSchema({ resolvers: [hotelsResolver] });
     const appoloServer = new ApolloServer({ schema: resolvers });
