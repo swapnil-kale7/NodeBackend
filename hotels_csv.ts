@@ -16,6 +16,7 @@ export default class hotels extends BaseEntity {
     @Field(() => String)
     @Column()
     featured_image: string;
+    
     @Field(() => String)
     @PrimaryGeneratedColumn()
     id: string;

@@ -15,7 +15,7 @@ const pool=new Pool({
 
 app.use(async ctx=>{
     await pool.connect();
-    const output = await pool.query("select * from hotels_csv");
+    const output = await pool.query("select * from hotels");
     ctx.response.body=output;
 })
 
