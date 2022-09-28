@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "SimpleNode": "ts-node-dev --respawn --transpile-only simpleNode.ts",
     "SimpleKoa": "ts-node-dev --respawn --transpile-only simpleKoa.ts",
-    "start": "ts-node-dev --respawn --transpile-only KoaGraphql.ts",
+    "start": "ts-node-dev --respawn --transpile-only KoaGraphql1.ts",
     "KoaDBsql": "ts-node-dev --respawn --transpile-only KoaDBsql.ts",
     "KoaTypeOrm": "ts-node-dev --respawn --transpile-only KoaTypeOrm.ts",
-    "KoaGraphql": "ts-node-dev --respawn --transpile-only KoaGraphql.ts"
+    "KoaGraphql": "ts-node-dev --respawn --transpile-only KoaGraphql1.ts"
   },
   "author": "",
   "license": "ISC",
