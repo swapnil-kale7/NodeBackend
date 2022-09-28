@@ -18,7 +18,7 @@ async function main() {
     const router = new Router();
     //make graphql work for all types like get put etc.
     router.all("/graphql", graphqlHTTP({ schema: resolvers }));
-    appoloServer.applyMiddleware({ app });
+    appoloServer.applyMiddleware({app});
     app.use(cors());
     app.use(router.routes()).use(router.allowedMethods());
 
